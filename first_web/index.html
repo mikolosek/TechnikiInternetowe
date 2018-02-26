@@ -1,8 +1,7 @@
-<!doctype HTML>
-
+<doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+	<head>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
         integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
         crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
@@ -11,81 +10,91 @@
         <link rel="stylesheet" href="index.css">
         <TITLE>The World Wide Web project</TITLE>
         <NEXTID N="55">
-    </head>
-    
-    <body>
-        <H1>World Wide Web</H1>The WorldWideWeb (W3) is a wide-area<a name=0 href="WhatIs.html">hypermedia</a> 
-        information retrieval initiative aiming to give universal access to a large universe of documents.
-        <p>Everything there is online about W3 is linked directly or indirectly to this document, including an 
-        <a NAME=24 href="Summary.html">executive summary</a> of the project, <a NAME=29 href="Administration/Mailing/Overview.html">
-        Mailing lists</a>, <a NAME=30 href="Policy.html">Policy</A> , November's  <a NAME=34 href="News/9211.html">W3  news</a>,
-        <A
-NAME=41 href="FAQ/List.html">Frequently Asked Questions</A> .
-<DL>
-<DT><A
-NAME=44 href="../DataSources/Top.html">What's out there?</A>
-<DD> Pointers to the
-world's online information,<A
-NAME=45 href="../DataSources/bySubject/Overview.html"> subjects</A>
-, <A
-NAME=z54 href="../DataSources/WWW/Servers.html">W3 servers</A>, etc.
-<DT><A
-NAME=46 href="Help.html">Help</A>
-<DD> on the browser you are using
-<DT><A
-NAME=13 href="Status.html">Software Products</A>
-<DD> A list of W3 project
-components and their current state.
-(e.g. <A
-NAME=27 href="LineMode/Browser.html">Line Mode</A> ,X11 <A
-NAME=35 href="Status.html#35">Viola</A> ,  <A
-NAME=26 href="NeXT/WorldWideWeb.html">NeXTStep</A>
-, <A
-NAME=25 href="Daemon/Overview.html">Servers</A> , <A
-NAME=51 href="Tools/Overview.html">Tools</A> ,<A
-NAME=53 href="MailRobot/Overview.html"> Mail robot</A> ,<A
-NAME=52 href="Status.html#57">
-Library</A> )
-<DT><A
-NAME=47 href="Technical.html">Technical</A>
-<DD> Details of protocols, formats,
-program internals etc
-<DT><A
-NAME=40 href="Bibliography.html">Bibliography</A>
-<DD> Paper documentation
-on  W3 and references.
-<DT><A
-NAME=14 href="People.html">People</A>
-<DD> A list of some people involved
-in the project.
-<DT><A
-NAME=15 href="History.html">History</A>
-<DD> A summary of the history
-of the project.
-<DT><A
-NAME=37 href="Helping.html">How can I help</A> ?
-<DD> If you would like
-to support the web..
-<DT><A
-NAME=48 href="../README.html">Getting code</A>
-<DD> Getting the code by<A
-NAME=49 href="LineMode/Defaults/Distribution.html">
-anonymous FTP</A> , etc.</A>
-</DL>
-<h2>Mapa</h2>
-<div id="mapid"></div>
-<script>
-var mymap = L.map('mapid').setView([46.234032, 6.052951000000007], 13);
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Mapa ',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoibWlrb2xvc2VrIiwiYSI6ImNqZTJ6eXExYzJlZnAycnM2ZTl1YmZhNHYifQ.6XhiKfCsiTD06qhIvVfqXQ'
-}).addTo(mymap);
-L.marker([46.234032, 6.052951000000007]).addTo(mymap)
-    .bindPopup('CERN')
-    .openPopup();
-</script>
-</BODY>
+	</head>
 
+	<body>
+		<main>
+			<H1>World Wide Web</H1>The WorldWideWeb (W3) is a wide-area<A
+			NAME=0 HREF="WhatIs.html">
+			hypermedia</A> information retrieval
+			initiative aiming to give universal
+			access to a large universe of documents.<P>
+			Everything there is online about
+			W3 is linked directly or indirectly
+			to this document, including an <A
+			NAME=24 HREF="Summary.html">executive
+			summary</A> of the project, <A
+			NAME=29 HREF="Administration/Mailing/Overview.html">Mailing lists</A>
+			, <A
+			NAME=30 HREF="Policy.html">Policy</A> , November's  <A
+			NAME=34 HREF="News/9211.html">W3  news</A> ,
+			<A
+			NAME=41 HREF="FAQ/List.html">Frequently Asked Questions</A> .
+			<DL>
+			<DT><A
+			NAME=44 HREF="../DataSources/Top.html">What's out there?</A>
+			<DD> Pointers to the
+			world's online information,<A
+			NAME=45 HREF="../DataSources/bySubject/Overview.html"> subjects</A>
+			, <A
+			NAME=z54 HREF="../DataSources/WWW/Servers.html">W3 servers</A>, etc.
+			<DT><A
+			NAME=46 HREF="Help.html">Help</A>
+			<DD> on the browser you are using
+			<DT><A
+			NAME=13 HREF="Status.html">Software Products</A>
+			<DD> A list of W3 project
+			components and their current state.
+			(e.g. <A
+			NAME=27 HREF="LineMode/Browser.html">Line Mode</A> ,X11 <A
+			NAME=35 HREF="Status.html#35">Viola</A> ,  <A
+			NAME=26 HREF="NeXT/WorldWideWeb.html">NeXTStep</A>
+			, <A
+			NAME=25 HREF="Daemon/Overview.html">Servers</A> , <A
+			NAME=51 HREF="Tools/Overview.html">Tools</A> ,<A
+			NAME=53 HREF="MailRobot/Overview.html"> Mail robot</A> ,<A
+			NAME=52 HREF="Status.html#57">
+			Library</A> )
+			<DT><A
+			NAME=47 HREF="Technical.html">Technical</A>
+			<DD> Details of protocols, formats,
+			program internals etc
+			<DT><A
+			NAME=40 HREF="Bibliography.html">Bibliography</A>
+			<DD> Paper documentation
+			on  W3 and references.
+			<DT><A
+			NAME=14 HREF="People.html">People</A>
+			<DD> A list of some people involved
+			in the project.
+			<DT><A
+			NAME=15 HREF="History.html">History</A>
+			<DD> A summary of the history
+			of the project.
+			<DT><A
+			NAME=37 HREF="Helping.html">How can I help</A> ?
+			<DD> If you would like
+			to support the web..
+			<DT><A
+			NAME=48 HREF="../README.html">Getting code</A>
+			<DD> Getting the code by<A
+			NAME=49 HREF="LineMode/Defaults/Distribution.html">
+			anonymous FTP</A> , etc.</A>
+			</DL>
+            <h2>Mapa</h2>
+            <div id="mapid"></div>
+            <script>
+            var mymap = L.map('mapid').setView([46.234032, 6.052951000000007], 13);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Mapa ',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1IjoibWlrb2xvc2VrIiwiYSI6ImNqZTJ6eXExYzJlZnAycnM2ZTl1YmZhNHYifQ.6XhiKfCsiTD06qhIvVfqXQ'
+                }).addTo(mymap);
+            L.marker([46.234032, 6.052951000000007]).addTo(mymap)
+                .bindPopup('CERN')
+                .openPopup();
+            </script>
+		</main>
+	</body>
 </html>
