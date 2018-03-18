@@ -1,5 +1,17 @@
 /* BASIC TYPOGRAPHY                       */
 /* from https://github.com/oxalorg/sakura */
+@font-face {
+  font-family: Mina;
+  src: url(/Mina-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Mina;
+  src: url(/fonts/Mina/Mina-Regular.ttf);
+  font-weight: normal;
+}
+
 html {
   font-size: 62.5%;
   font-family: serif;
@@ -64,11 +76,19 @@ body {
   background: #fff;
   color: #4a4a4a;
 }
-header, footer {
+header {
+  font-family: Mina;
   font-size: large;
   text-align: center;
   padding: 0.3em 0;
   background-color: #4a4a4a;
+  color: #f9f9f9;
+}
+footer {
+  font-size: large;
+  text-align: center;
+  padding: 0.3em 0;
+  background-color: greenyellow;
   color: #f9f9f9;
 }
 nav {
@@ -110,12 +130,6 @@ aside {
 footer {
   grid-row: 3;
   grid-column: 1 / 4;
-}
-
-map {
-  grid-row: 2;
-  grid-column: 2 / 3;
-  padding: 0 20px; 
 }
 
 #mapid {
